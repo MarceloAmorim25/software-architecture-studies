@@ -28,3 +28,46 @@ that can be solved independently. - John Ousterhout"
 * Demeter -> Ocultamento de Informação
 * Aberto/Fechado -> Extensibilidade
 * Substituição de Liskov -> Extensibilidade
+
+### Responsabilidade Única
+
+- "Esse princípio é uma aplicação direta da ideia de coesão. Ele propõe o seguinte: toda classe deve ter uma única responsabilidade."
+
+### Princípio da Segregação de Interfaces
+
+- As interfaces não devem ter métodos não utilizados pela classe que a implementa. Isso retoma o conceito de coesão.
+
+### Princípio de Inversão de Dependências
+
+- "...em vez de depender de classes concretas, clientes devem depender de interfaces. Portanto, um nome mais intuitivo para o princípio seria Prefira Interfaces a Classes."
+
+### Prefira Composição a Herança
+
+- Não é proibido usar herança, mas esta gera um alto acoplamento entre as classes.
+
+### Princípio de Demeter (Principle of Least Privilege)
+
+- Quatro casos nos quais métodos podem invocar outros métodos:
+
+    a) "de sua própria classe"
+    b) "de objetos passados como parâmetros"
+    c) "de objetos criados pelo próprio método"
+    d) "de atributos da classe do método"
+
+### Princípio Aberto/Fechado
+
+- "uma classe deve estar fechada para modificações e aberta para extensões."
+
+### Princípio de Substituição de Liskov
+
+- As subclasses realizando um método herdado da classe pai não deve alterar o resultado final.
+
+## 5.7 Métricas de Código Fonte
+
+- Tamanho (LOC = Lines of Code)
+- Tamanho (número de métodos, número de atributos, número de classes, número de pacotes)
+- Coesão (LCOM - Lack of Cohesion Between Methods)
+- "LCOM parte do pressuposto que, em uma classe coesa, qualquer par de métodos deve acessar pelo menos um atributo em comum. Ou seja,
+ o que dá coesão a uma classe é o fato de seus métodos trabalharem com os mesmos atributos.".
+- Acoplamento (CBO - Coupling Beetween Objects)
+- Complexidade (CC - Complexidade Ciclimática)
